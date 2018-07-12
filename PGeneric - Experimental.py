@@ -1,5 +1,5 @@
 import pyautogui
-import time  # importing a module called pyautogui, that allows us to interact with mouse and keyboard, also importing time
+import time
 from random import *
 import winsound
 import os
@@ -84,8 +84,7 @@ def AMPM():
     else:
         pyautogui.typewrite("AM")
 
-def tab():  # Defining the function that will do your tab work.
-    # tells the module "pyautogui" to press a key that we define
+def tab():
     pyautogui.press('tab')
 
 def beep():
@@ -110,7 +109,6 @@ def rerun():
         ans = input("Do you want to go again? Press Y or N.").upper()
         if ans == "Y":
                 do_task()
-                #repeat()
         if ans == "N":
                 print("Goodbye!")
                 time.sleep(1.5)
